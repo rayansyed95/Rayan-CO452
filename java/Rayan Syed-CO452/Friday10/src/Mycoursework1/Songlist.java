@@ -18,7 +18,7 @@ public class Songlist
 
     private void addSomeSongs() 
     {
-        Song song = new Song("Starboy", "Thr Weeknd", 2100055576);
+        Song song = new Song("Starboy", "The Weeknd", 2100055576);
         songs.add(song);
 
         song = new Song("Lemonade", "Internet Money", 183096867	);
