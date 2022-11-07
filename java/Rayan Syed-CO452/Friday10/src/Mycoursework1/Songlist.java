@@ -21,7 +21,7 @@ public class Songlist
         Song song = new Song("Starboy", "The Weeknd", 2100055576);
         songs.add(song);
 
-        song = new Song("Lemonade", "Internet Money", 183096867	);
+        song = new Song("Lemonade", "Internet Money", 183096867);
         songs.add(song);
 
         song = new Song("Breathless", "Shayne Ward", 7809326);
@@ -106,19 +106,22 @@ public class Songlist
     {
         System.out.println("\nPrinting All Songs\n");
         int count = 0;
-        
+
         for(Song song : songs)
         {
-             count++;
-            System.out.print("Song " + "count" + ": ");
+            count++;
+            System.out.print("Song " + count + ": ");
             song.print();
         }
+
+        System.out.println();
     }
     
     private void printTopSongs()  {
+        System.out.println(" Printing Top Songs");
         Scanner reader = new Scanner(System.in);
 
-        System.out.println("Enter No. of plays you want to print: ");
+        System.out.println("Enter minimum number of plays you want to print: ");
         Integer num = reader.nextInt();
             int i;
             for (i = 0; i < songs.size(); i++) {
